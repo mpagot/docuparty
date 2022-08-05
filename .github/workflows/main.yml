@@ -21,7 +21,7 @@ jobs:
 
       - name: Install requirements
         run: |
-          python3 -m pip install --upgrade pymdown-extensions
+          python3 -m pip install --upgrade pymdown-extensions markdown
 
       - name: GitHub Spellcheck
         uses: igsekor/pyspelling-any@v1.0.4
