@@ -1,7 +1,17 @@
 matrix:
 - name: markdown
   pipeline:
-  - pyspelling.filters.text
+    - pyspelling.filters.markdown:
+        markdown_extensions:
+        - pymdownx.superfences:
+        - pymdownx.highlight:
   sources:
   - '**/*.md'
+  aspell:
+    lang: en
+    suggest: true
+  dictionary:
+    wordlists:
+    - en-custom.txt
+    output: build/dictionary/python.dic
   default_encoding: utf-8

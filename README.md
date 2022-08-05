@@ -1,9 +1,9 @@
 # docuparty
-Repo to experiment with various documentation tech
+Repository to experiment with various documentation tech
 
 ## Ideas to try
-List fo something that I like to give a try:
+List of something that I like to give a try:
 
-* githubactions to spellcheck and Markdown lint
-* Publis documentation in READDOC or GitHup project page
+* GitHub Actions to spellcheck and Markdown lint
+* Publish documentation in ReadTheDocs or GitHub project page
 * Releases
