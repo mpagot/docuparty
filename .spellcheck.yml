@@ -9,6 +9,7 @@ matrix:
   - '**/*.md'
   aspell:
     lang: en
+    suggest: true
   dictionary:
     wordlists:
     - en-custom.txt
