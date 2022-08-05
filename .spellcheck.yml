@@ -1,7 +1,10 @@
 matrix:
 - name: markdown
   pipeline:
-  - pyspelling.filters.text
+    - pyspelling.filters.markdown:
+      markdown_extensions:
+        - pymdownx.superfences:
+        - pymdownx.highlight:
   sources:
   - '**/*.md'
   aspell:
