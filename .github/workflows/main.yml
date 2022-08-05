@@ -21,10 +21,12 @@ jobs:
 
       - name: Install requirements
         run: |
-          python3 -m pip install --upgrade pymdown-extensions markdown
+          apt-get update && apt-get install -y aspell hunspell aspell-en
+          python3 -m pip install --upgrade pyspelling pyyaml pymdown-extensions markdown
+          pyspelling --config .spellcheck.yml
 
-      - name: GitHub Spellcheck
-        uses: igsekor/pyspelling-any@v1.0.4
+      #- name: GitHub Spellcheck
+      #  uses: igsekor/pyspelling-any@v1.0.4
 
   render:
     runs-on: ubuntu-latest
