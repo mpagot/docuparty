@@ -2,7 +2,7 @@ matrix:
 - name: markdown
   pipeline:
     - pyspelling.filters.markdown:
-      markdown_extensions:
+        markdown_extensions:
         - pymdownx.superfences:
         - pymdownx.highlight:
   sources:
