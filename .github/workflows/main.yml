@@ -23,8 +23,11 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
-      - name: GitHub Spellcheck
-        uses: igsekor/pyspelling-any@v1.0.4
+      - name: Check Spelling
+        uses: rojopolis/spellcheck-github-actions@0.33.0
+        with:
+          config_path: .spellcheck.yml
+          task_name: markdown_task
 
   render:
     runs-on: ubuntu-latest
